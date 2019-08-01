@@ -20,7 +20,6 @@ class CreateDistributorsTable extends Migration
             $table->Integer('telepon');
             $table->timestamps();
         });
-        
     }
 
     /**
