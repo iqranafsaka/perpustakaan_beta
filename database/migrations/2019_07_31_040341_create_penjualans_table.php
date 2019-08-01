@@ -16,11 +16,7 @@ class CreatePenjualansTable extends Migration
         Schema::create('penjualans', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('id_buku');
-            $table->foreign('id_buku')->references('id')->on('bukus')->onDelete('cascade');
-            
             $table->unsignedBigInteger('id_kasir');
-            $table->foreign('id_kasir')->references('id')->on('kasirs')->onDelete('cascade');
-            
             $table->Integer('jumlah');
             $table->Integer('total');
             $table->date('tanggal');
