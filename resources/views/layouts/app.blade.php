@@ -37,13 +37,16 @@
                         {{--  Kondisi  --}}
                         @else
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Menu 1</a>
+                                <a class="nav-link" href="#">Menu (Super Admin)</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Menu 2</a>
+                                <a class="nav-link" href="#">Menu (Admin)</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Menu 3</a>
+                                <a class="nav-link" href="#">Menu (User)</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Menu (Global User)</a>
                             </li>
                         @endguest
                     </ul>
