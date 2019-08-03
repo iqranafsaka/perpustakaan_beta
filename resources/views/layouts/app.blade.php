@@ -36,6 +36,7 @@
                         @guest
                         {{--  Kondisi  --}}
                         @else
+                        @role('admin')
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Menu (Super Admin)</a>
                             </li>
@@ -43,11 +44,12 @@
                                 <a class="nav-link" href="#">Menu (Admin)</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Menu (User)</a>
+                                <a class="nav-link" style="color:lime" href="{{ url('admin/user') }}">Menu (User)</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Menu (Global User)</a>
                             </li>
+                        @endrole
                         @endguest
                     </ul>
                     
